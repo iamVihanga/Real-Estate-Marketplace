@@ -1,5 +1,7 @@
 import React from 'react'
+
 import './styles.css'
+import { fontHeading, fontSans } from '@/lib/fonts'
 
 export const metadata = {
   description: 'A blank template using Payload in a Next.js app.',
@@ -10,8 +12,12 @@ export default async function RootLayout(props: { children: React.ReactNode }) {
   const { children } = props
 
   return (
-    <html lang="en">
-      <body>
+    <html
+      lang="en"
+      className={`${fontSans.variable} ${fontHeading.variable}`}
+      suppressHydrationWarning
+    >
+      <body className="font-sans antialiased">
         <main>{children}</main>
       </body>
     </html>
