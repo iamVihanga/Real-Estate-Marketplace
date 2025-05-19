@@ -1,0 +1,196 @@
+id,code,city,state_abbr,state_name,county,latitude,longitude,est_population
+7997,37705,Andersonville,TN,Tennessee,Anderson County,36.2,-84.04,4680
+7998,37710,Briceville,TN,Tennessee,Anderson County,36.16,-84.3,750
+7999,37716,Clinton,TN,Tennessee,Anderson County,36.09,-84.13,22660
+8000,37717,Clinton,TN,Tennessee,Anderson County,36.09,-84.13,835
+8001,37754,Heiskell,TN,Tennessee,Anderson County,36.12,-84.04,4470
+8002,37769,Rocky Top,TN,Tennessee,Anderson County,36.22,-84.15,4670
+8003,37828,Norris,TN,Tennessee,Anderson County,36.21,-84.06,1589
+8004,37830,Oak Ridge,TN,Tennessee,Anderson County,35.96,-84.29,29870
+8005,37831,Oak Ridge,TN,Tennessee,Anderson County,35.96,-84.29,857
+8006,37701,Alcoa,TN,Tennessee,Blount County,35.79,-83.97,8150
+8007,37737,Friendsville,TN,Tennessee,Blount County,35.75,-84.13,5990
+8008,37777,Louisville,TN,Tennessee,Blount County,35.82,-84.04,11090
+8009,37801,Maryville,TN,Tennessee,Blount County,35.66,-84.09,26470
+8010,37802,Maryville,TN,Tennessee,Blount County,35.74,-83.97,1744
+8011,37803,Maryville,TN,Tennessee,Blount County,35.74,-83.97,31190
+8012,37804,Maryville,TN,Tennessee,Blount County,35.79,-83.89,22980
+8013,37853,Rockford,TN,Tennessee,Blount County,35.82,-83.93,3110
+8014,37878,Tallassee,TN,Tennessee,Blount County,35.6,-83.98,420
+8015,37882,Townsend,TN,Tennessee,Blount County,35.67,-83.75,2660
+8016,37886,Walland,TN,Tennessee,Blount County,35.72,-83.81,4000
+8017,37714,Caryville,TN,Tennessee,Campbell County,36.26,-84.3,3520
+8018,37729,Duff,TN,Tennessee,Campbell County,36.52,-84.03,890
+8019,37757,Jacksboro,TN,Tennessee,Campbell County,36.33,-84.19,8180
+8020,37762,Jellico,TN,Tennessee,Campbell County,36.57,-84.12,2010
+8021,37766,La Follette,TN,Tennessee,Campbell County,36.37,-84.12,13720
+8022,37819,Newcomb,TN,Tennessee,Campbell County,36.54,-84.2,390
+8023,37643,Elizabethton,TN,Tennessee,Carter County,36.33,-82.23,26330
+8024,37644,Elizabethton,TN,Tennessee,Carter County,36.33,-82.23,1082
+8025,37658,Hampton,TN,Tennessee,Carter County,36.28,-82.17,3180
+8026,37682,Milligan College,TN,Tennessee,Carter County,36.3,-82.29,415
+8027,37687,Roan Mountain,TN,Tennessee,Carter County,36.18,-82.07,3600
+8028,37694,Watauga,TN,Tennessee,Carter County,36.36,-82.29,1480
+8029,37707,Arthur,TN,Tennessee,Claiborne County,36.54,-83.67,327
+8030,37715,Clairfield,TN,Tennessee,Claiborne County,36.54,-83.95,550
+8031,37724,Cumberland Gap,TN,Tennessee,Claiborne County,36.55,-83.71,1740
+8032,37730,Eagan,TN,Tennessee,Claiborne County,36.57,-83.97,131
+8033,37752,Harrogate,TN,Tennessee,Claiborne County,36.56,-83.54,4600
+8034,37773,Lone Mountain,TN,Tennessee,Claiborne County,36.38,-83.58,28
+8035,37824,New Tazewell,TN,Tennessee,Claiborne County,36.43,-83.6,2101
+8036,37825,New Tazewell,TN,Tennessee,Claiborne County,36.43,-83.6,6390
+8037,37851,Pruden,TN,Tennessee,Claiborne County,36.57,-83.79,42
+8038,37867,Shawanee,TN,Tennessee,Claiborne County,36.57,-83.55,90
+8039,37870,Speedwell,TN,Tennessee,Claiborne County,36.47,-83.81,3420
+8040,37879,Tazewell,TN,Tennessee,Claiborne County,36.45,-83.57,8450
+8041,37713,Bybee,TN,Tennessee,Cocke County,36.04,-83.18,1230
+8042,37722,Cosby,TN,Tennessee,Cocke County,35.81,-83.25,5000
+8043,37727,Del Rio,TN,Tennessee,Cocke County,35.91,-83.02,1800
+8044,37753,Hartford,TN,Tennessee,Cocke County,35.81,-83.14,620
+8045,37821,Newport,TN,Tennessee,Cocke County,35.96,-83.19,18620
+8046,37822,Newport,TN,Tennessee,Cocke County,35.96,-83.19,1178
+8047,37843,Parrottsville,TN,Tennessee,Cocke County,36,-83.09,3380
+8048,37708,Bean Station,TN,Tennessee,Grainger County,36.34,-83.28,5630
+8049,37709,Blaine,TN,Tennessee,Grainger County,36.14,-83.69,3700
+8050,37848,Powder Springs,TN,Tennessee,Grainger County,36.24,-83.66,280
+8051,37861,Rutledge,TN,Tennessee,Grainger County,36.27,-83.52,7380
+8052,37881,Thorn Hill,TN,Tennessee,Grainger County,36.35,-83.41,1830
+8053,37888,Washburn,TN,Tennessee,Grainger County,36.31,-83.59,2300
+8054,37616,Afton,TN,Tennessee,Greene County,36.23,-82.75,4310
+8055,37641,Chuckey,TN,Tennessee,Greene County,36.24,-82.71,7750
+8056,37743,Greeneville,TN,Tennessee,Greene County,36.07,-82.86,20890
+8057,37744,Greeneville,TN,Tennessee,Greene County,36.16,-82.81,957
+8058,37745,Greeneville,TN,Tennessee,Greene County,36.16,-82.81,15730
+8059,37809,Midway,TN,Tennessee,Greene County,36.16,-83.04,1900
+8060,37810,Mohawk,TN,Tennessee,Greene County,36.18,-83.12,1590
+8061,37818,Mosheim,TN,Tennessee,Greene County,36.19,-82.95,4340
+8062,37778,Lowland,TN,Tennessee,Hamblen County,36.15,-83.2,0
+8063,37813,Morristown,TN,Tennessee,Hamblen County,36.21,-83.29,14620
+8064,37814,Morristown,TN,Tennessee,Hamblen County,36.23,-83.34,28320
+8065,37815,Morristown,TN,Tennessee,Hamblen County,36.21,-83.29,662
+8066,37816,Morristown,TN,Tennessee,Hamblen County,36.21,-83.29,402
+8067,37860,Russellville,TN,Tennessee,Hamblen County,36.25,-83.19,3850
+8068,37877,Talbott,TN,Tennessee,Hamblen County,36.14,-83.4,8420
+8069,37891,Whitesburg,TN,Tennessee,Hamblen County,36.29,-83.13,3070
+8070,37765,Kyles Ford,TN,Tennessee,Hancock County,36.57,-83.06,330
+8071,37869,Sneedville,TN,Tennessee,Hancock County,36.53,-83.21,3750
+8072,37642,Church Hill,TN,Tennessee,Hawkins County,36.52,-82.71,12800
+8073,37645,Mount Carmel,TN,Tennessee,Hawkins County,36.56,-82.65,4950
+8074,37711,Bulls Gap,TN,Tennessee,Hawkins County,36.26,-83.07,4410
+8075,37731,Eidson,TN,Tennessee,Hawkins County,36.5,-83.08,620
+8076,37811,Mooresburg,TN,Tennessee,Hawkins County,36.34,-83.22,3060
+8077,37857,Rogersville,TN,Tennessee,Hawkins County,36.4,-83,17120
+8078,37873,Surgoinsville,TN,Tennessee,Hawkins County,36.47,-82.85,3400
+8079,37725,Dandridge,TN,Tennessee,Jefferson County,36.02,-83.41,16920
+8080,37760,Jefferson City,TN,Tennessee,Jefferson County,36.11,-83.48,11110
+8081,37820,New Market,TN,Tennessee,Jefferson County,36.09,-83.55,7310
+8082,37871,Strawberry Plains,TN,Tennessee,Jefferson County,36.06,-83.68,8320
+8083,37890,White Pine,TN,Tennessee,Jefferson County,36.09,-83.29,6360
+8084,37640,Butler,TN,Tennessee,Johnson County,36.31,-82,2860
+8085,37680,Laurel Bloomery,TN,Tennessee,Johnson County,36.58,-81.73,470
+8086,37683,Mountain City,TN,Tennessee,Johnson County,36.47,-81.8,8750
+8087,37688,Shady Valley,TN,Tennessee,Johnson County,36.51,-81.92,760
+8088,37691,Trade,TN,Tennessee,Johnson County,36.34,-81.74,650
+8089,37721,Corryton,TN,Tennessee,Knox County,36.12,-83.8,12750
+8090,37806,Mascot,TN,Tennessee,Knox County,36.08,-83.73,2900
+8091,37849,Powell,TN,Tennessee,Knox County,36.03,-84.02,25040
+8092,37901,Knoxville,TN,Tennessee,Knox County,35.97,-83.94,488
+8093,37902,Knoxville,TN,Tennessee,Knox County,35.96,-83.92,1440
+8094,37909,Knoxville,TN,Tennessee,Knox County,35.95,-84.02,12890
+8095,37912,Knoxville,TN,Tennessee,Knox County,36.01,-83.98,18410
+8096,37914,Knoxville,TN,Tennessee,Knox County,35.98,-83.8,17350
+8097,37915,Knoxville,TN,Tennessee,Knox County,35.97,-83.9,3600
+8098,37916,Knoxville,TN,Tennessee,Knox County,35.95,-83.93,780
+8099,37917,Knoxville,TN,Tennessee,Knox County,36,-83.91,18000
+8100,37918,Knoxville,TN,Tennessee,Knox County,36.06,-83.92,39630
+8101,37919,Knoxville,TN,Tennessee,Knox County,35.91,-84,26170
+8102,37920,Knoxville,TN,Tennessee,Knox County,35.91,-83.87,32750
+8103,37921,Knoxville,TN,Tennessee,Knox County,35.97,-83.94,23330
+8104,37922,Knoxville,TN,Tennessee,Knox County,35.86,-84.1,40660
+8105,37923,Knoxville,TN,Tennessee,Knox County,35.93,-84.08,26020
+8106,37924,Knoxville,TN,Tennessee,Knox County,36.03,-83.8,11880
+8107,37927,Knoxville,TN,Tennessee,Knox County,35.97,-83.94,612
+8108,37928,Knoxville,TN,Tennessee,Knox County,35.97,-83.94,565
+8109,37929,Knoxville,TN,Tennessee,Knox County,35.96,-83.92,0
+8110,37930,Knoxville,TN,Tennessee,Knox County,35.97,-83.94,906
+8111,37931,Knoxville,TN,Tennessee,Knox County,35.98,-84.13,30340
+8112,37932,Knoxville,TN,Tennessee,Knox County,35.92,-84.2,23950
+8113,37933,Knoxville,TN,Tennessee,Knox County,35.97,-83.94,750
+8114,37934,Farragut,TN,Tennessee,Knox County,35.87,-84.17,27410
+8115,37938,Knoxville,TN,Tennessee,Knox County,36.12,-83.94,18260
+8116,37939,Knoxville,TN,Tennessee,Knox County,35.97,-83.94,491
+8117,37940,Knoxville,TN,Tennessee,Knox County,35.97,-83.94,654
+8118,37950,Knoxville,TN,Tennessee,Knox County,35.97,-83.94,1031
+8119,37990,Knoxville,TN,Tennessee,Knox County,35.86,-84.12,0
+8120,37995,Knoxville,TN,Tennessee,Knox County,35.97,-83.94,36
+8121,37996,Knoxville,TN,Tennessee,Knox County,35.97,-83.94,90
+8122,37997,Knoxville,TN,Tennessee,Knox County,35.97,-83.94,0
+8123,37998,Knoxville,TN,Tennessee,Knox County,35.97,-83.94,344
+8124,37742,Greenback,TN,Tennessee,Loudon County,35.65,-84.17,5970
+8125,37771,Lenoir City,TN,Tennessee,Loudon County,35.8,-84.27,15930
+8126,37772,Lenoir City,TN,Tennessee,Loudon County,35.79,-84.22,13250
+8127,37774,Loudon,TN,Tennessee,Loudon County,35.73,-84.35,21710
+8128,37846,Philadelphia,TN,Tennessee,Loudon County,35.67,-84.4,4420
+8129,37303,Athens,TN,Tennessee,McMinn County,35.45,-84.6,22170
+8130,37309,Calhoun,TN,Tennessee,McMinn County,35.29,-84.74,1980
+8131,37329,Englewood,TN,Tennessee,McMinn County,35.42,-84.48,4840
+8132,37331,Etowah,TN,Tennessee,McMinn County,35.33,-84.52,6430
+8133,37370,Riceville,TN,Tennessee,McMinn County,35.38,-84.69,4240
+8134,37371,Athens,TN,Tennessee,Mcminn County,35.45,-84.6,1239
+8135,37826,Niota,TN,Tennessee,McMinn County,35.51,-84.54,4080
+8136,37314,Coker Creek,TN,Tennessee,Monroe County,35.26,-84.3,70
+8137,37354,Madisonville,TN,Tennessee,Monroe County,35.52,-84.35,14670
+8138,37385,Tellico Plains,TN,Tennessee,Monroe County,35.36,-84.29,6920
+8139,37874,Sweetwater,TN,Tennessee,Monroe County,35.6,-84.46,13740
+8140,37885,Vonore,TN,Tennessee,Monroe County,35.59,-84.23,5650
+8141,37719,Coalfield,TN,Tennessee,Morgan County,36.02,-84.43,532
+8142,37726,Deer Lodge,TN,Tennessee,Morgan County,36.21,-84.83,1740
+8143,37733,Rugby,TN,Tennessee,Morgan County,36.36,-84.7,40
+8144,37770,Lancing,TN,Tennessee,Morgan County,36.15,-84.69,2230
+8145,37829,Oakdale,TN,Tennessee,Morgan County,36.01,-84.64,1520
+8146,37845,Petros,TN,Tennessee,Morgan County,36.09,-84.44,532
+8147,37872,Sunbright,TN,Tennessee,Morgan County,36.24,-84.67,2000
+8148,37887,Wartburg,TN,Tennessee,Morgan County,36.1,-84.58,4500
+8149,37748,Harriman,TN,Tennessee,Roane County,35.93,-84.56,14700
+8150,37763,Kingston,TN,Tennessee,Roane County,35.87,-84.51,14490
+8151,37840,Oliver Springs,TN,Tennessee,Roane County,36.03,-84.32,7880
+8152,37854,Rockwood,TN,Tennessee,Roane County,35.87,-84.67,10750
+8153,37732,Elgin,TN,Tennessee,Scott County,36.33,-84.63,277
+8154,37755,Helenwood,TN,Tennessee,Scott County,36.43,-84.56,2660
+8155,37756,Huntsville,TN,Tennessee,Scott County,36.41,-84.48,2230
+8156,37841,Oneida,TN,Tennessee,Scott County,36.5,-84.51,7920
+8157,37847,Pioneer,TN,Tennessee,Scott County,36.46,-84.29,1990
+8158,37852,Robbins,TN,Tennessee,Scott County,36.32,-84.57,2110
+8159,37892,Winfield,TN,Tennessee,Scott County,36.56,-84.45,1530
+8160,37738,Gatlinburg,TN,Tennessee,Sevier County,35.72,-83.49,4710
+8161,37764,Kodak,TN,Tennessee,Sevier County,35.97,-83.62,10210
+8162,37862,Sevierville,TN,Tennessee,Sevier County,35.78,-83.61,19160
+8163,37863,Pigeon Forge,TN,Tennessee,Sevier County,35.79,-83.55,5510
+8164,37864,Sevierville,TN,Tennessee,Sevier County,35.89,-83.57,2197
+8165,37865,Seymour,TN,Tennessee,Sevier County,35.87,-83.77,21120
+8166,37868,Pigeon Forge,TN,Tennessee,Sevier County,35.79,-83.55,1206
+8167,37876,Sevierville,TN,Tennessee,Sevier County,35.89,-83.57,27760
+8168,37617,Blountville,TN,Tennessee,Sullivan County,36.53,-82.32,12400
+8169,37618,Bluff City,TN,Tennessee,Sullivan County,36.46,-82.27,10820
+8170,37620,Bristol,TN,Tennessee,Sullivan County,36.56,-82.19,31390
+8171,37621,Bristol,TN,Tennessee,Sullivan County,36.56,-82.19,859
+8172,37625,Bristol,TN,Tennessee,Sullivan County,36.56,-82.19,246
+8173,37660,Kingsport,TN,Tennessee,Sullivan County,36.52,-82.55,32300
+8174,37662,Kingsport,TN,Tennessee,Sullivan County,36.52,-82.55,825
+8175,37663,Kingsport,TN,Tennessee,Sullivan County,36.46,-82.49,13580
+8176,37664,Kingsport,TN,Tennessee,Sullivan County,36.52,-82.5,25260
+8177,37665,Kingsport,TN,Tennessee,Sullivan County,36.58,-82.57,4040
+8178,37669,Kingsport,TN,Tennessee,Sullivan County,36.52,-82.55,0
+8179,37686,Piney Flats,TN,Tennessee,Sullivan County,36.44,-82.34,8180
+8180,37699,Piney Flats,TN,Tennessee,Sullivan County,36.44,-82.34,0
+8181,37601,Johnson City,TN,Tennessee,Washington County,36.33,-82.36,29170
+8182,37602,Johnson City,TN,Tennessee,Washington County,36.33,-82.36,1105
+8183,37604,Johnson City,TN,Tennessee,Washington County,36.3,-82.38,28670
+8184,37605,Johnson City,TN,Tennessee,Washington County,36.33,-82.36,734
+8185,37614,Johnson City,TN,Tennessee,Washington County,36.3,-82.37,287
+8186,37615,Johnson City,TN,Tennessee,Washington County,36.4,-82.46,21240
+8187,37656,Fall Branch,TN,Tennessee,Washington County,36.41,-82.62,3400
+8188,37659,Jonesborough,TN,Tennessee,Washington County,36.29,-82.47,26570
+8189,37681,Limestone,TN,Tennessee,Washington County,36.22,-82.63,5480
+8190,37684,Mountain Home,TN,Tennessee,Washington County,36.3,-82.36,426
+8191,37690,Telford,TN,Tennessee,Washington County,36.24,-82.54,3870

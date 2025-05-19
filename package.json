@@ -12,7 +12,8 @@
     "generate:types": "cross-env NODE_OPTIONS=--no-deprecation payload generate:types",
     "lint": "cross-env NODE_OPTIONS=--no-deprecation next lint",
     "payload": "cross-env NODE_OPTIONS=--no-deprecation payload",
-    "start": "cross-env NODE_OPTIONS=--no-deprecation next start"
+    "start": "cross-env NODE_OPTIONS=--no-deprecation next start",
+    "db:seed": "cross-env NODE_OPTIONS=--no-deprecation payload run src/db/seed.ts"
   },
   "dependencies": {
     "@payloadcms/db-postgres": "3.33.0",
@@ -24,6 +25,7 @@
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
     "cross-env": "^7.0.3",
+    "csv-parser": "^3.2.0",
     "graphql": "^16.8.1",
     "lucide-react": "^0.511.0",
     "next": "15.3.0",
