@@ -69,6 +69,7 @@ export interface Config {
   collections: {
     users: User;
     media: Media;
+    zipcodes: Zipcode;
     'payload-locked-documents': PayloadLockedDocument;
     'payload-preferences': PayloadPreference;
     'payload-migrations': PayloadMigration;
@@ -77,6 +78,7 @@ export interface Config {
   collectionsSelect: {
     users: UsersSelect<false> | UsersSelect<true>;
     media: MediaSelect<false> | MediaSelect<true>;
+    zipcodes: ZipcodesSelect<false> | ZipcodesSelect<true>;
     'payload-locked-documents': PayloadLockedDocumentsSelect<false> | PayloadLockedDocumentsSelect<true>;
     'payload-preferences': PayloadPreferencesSelect<false> | PayloadPreferencesSelect<true>;
     'payload-migrations': PayloadMigrationsSelect<false> | PayloadMigrationsSelect<true>;
@@ -151,6 +153,44 @@ export interface Media {
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "zipcodes".
+ */
+export interface Zipcode {
+  id: number;
+  code?: number | null;
+  /**
+   * The city associated with the zip code
+   */
+  city?: string | null;
+  /**
+   * The two-letter abbreviation for the state
+   */
+  state_abbr?: string | null;
+  /**
+   * The full name of the state
+   */
+  state_name?: string | null;
+  /**
+   * County of the zip code
+   */
+  county?: string | null;
+  /**
+   * The latitude of the zip code area
+   */
+  latitude?: number | null;
+  /**
+   * The longitude of the zip code area
+   */
+  longitude?: number | null;
+  /**
+   * Estimated population of the zip code area
+   */
+  est_population?: number | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
  * via the `definition` "payload-locked-documents".
  */
 export interface PayloadLockedDocument {
@@ -163,6 +203,10 @@ export interface PayloadLockedDocument {
     | ({
         relationTo: 'media';
         value: number | Media;
+      } | null)
+    | ({
+        relationTo: 'zipcodes';
+        value: number | Zipcode;
       } | null);
   globalSlug?: string | null;
   user: {
@@ -238,6 +282,22 @@ export interface MediaSelect<T extends boolean = true> {
   height?: T;
   focalX?: T;
   focalY?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "zipcodes_select".
+ */
+export interface ZipcodesSelect<T extends boolean = true> {
+  code?: T;
+  city?: T;
+  state_abbr?: T;
+  state_name?: T;
+  county?: T;
+  latitude?: T;
+  longitude?: T;
+  est_population?: T;
+  updatedAt?: T;
+  createdAt?: T;
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema
