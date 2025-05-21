@@ -30,7 +30,7 @@ export async function seedZipCodes(payload: Payload) {
       // eslint-disable-next-line @typescript-eslint/no-explicit-any
       .on('data', (data: any) => {
         zipCodes.push({
-          code: Number(data.code),
+          code: data.code,
           city: data.city,
           state_abbr: data.state_abbr,
           state_name: data.state_name,

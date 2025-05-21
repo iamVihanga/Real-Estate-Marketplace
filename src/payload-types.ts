@@ -70,6 +70,8 @@ export interface Config {
     users: User;
     media: Media;
     zipcodes: Zipcode;
+    properties: Property;
+    features: Feature;
     'payload-locked-documents': PayloadLockedDocument;
     'payload-preferences': PayloadPreference;
     'payload-migrations': PayloadMigration;
@@ -79,6 +81,8 @@ export interface Config {
     users: UsersSelect<false> | UsersSelect<true>;
     media: MediaSelect<false> | MediaSelect<true>;
     zipcodes: ZipcodesSelect<false> | ZipcodesSelect<true>;
+    properties: PropertiesSelect<false> | PropertiesSelect<true>;
+    features: FeaturesSelect<false> | FeaturesSelect<true>;
     'payload-locked-documents': PayloadLockedDocumentsSelect<false> | PayloadLockedDocumentsSelect<true>;
     'payload-preferences': PayloadPreferencesSelect<false> | PayloadPreferencesSelect<true>;
     'payload-migrations': PayloadMigrationsSelect<false> | PayloadMigrationsSelect<true>;
@@ -157,7 +161,7 @@ export interface Media {
  */
 export interface Zipcode {
   id: number;
-  code?: number | null;
+  code?: string | null;
   /**
    * The city associated with the zip code
    */
@@ -191,6 +195,41 @@ export interface Zipcode {
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "properties".
+ */
+export interface Property {
+  id: number;
+  title: string;
+  street: string;
+  /**
+   * Select a ZIP code for this property
+   */
+  zipcode: number | Zipcode;
+  price: number;
+  listingStatus: 'for_sale' | 'pending' | 'under_construction' | 'sold' | 'not_for_sale';
+  /**
+   * Select features for this property
+   */
+  features?: (number | Feature)[] | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "features".
+ */
+export interface Feature {
+  id: number;
+  /**
+   * Name of the feature (e.g. "Hardwood Floors", "Swimming Pool)
+   */
+  name: string;
+  category: 'interior' | 'exterior' | 'community' | 'appliances' | 'utilities' | 'other';
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
  * via the `definition` "payload-locked-documents".
  */
 export interface PayloadLockedDocument {
@@ -207,6 +246,14 @@ export interface PayloadLockedDocument {
     | ({
         relationTo: 'zipcodes';
         value: number | Zipcode;
+      } | null)
+    | ({
+        relationTo: 'properties';
+        value: number | Property;
+      } | null)
+    | ({
+        relationTo: 'features';
+        value: number | Feature;
       } | null);
   globalSlug?: string | null;
   user: {
@@ -296,6 +343,30 @@ export interface ZipcodesSelect<T extends boolean = true> {
   latitude?: T;
   longitude?: T;
   est_population?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "properties_select".
+ */
+export interface PropertiesSelect<T extends boolean = true> {
+  title?: T;
+  street?: T;
+  zipcode?: T;
+  price?: T;
+  listingStatus?: T;
+  features?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "features_select".
+ */
+export interface FeaturesSelect<T extends boolean = true> {
+  name?: T;
+  category?: T;
   updatedAt?: T;
   createdAt?: T;
 }
