@@ -12,7 +12,7 @@ export const ZipCodes: CollectionConfig = {
   fields: [
     {
       name: 'code',
-      type: 'number',
+      type: 'text',
       label: 'Zip Code',
       unique: true,
     },
