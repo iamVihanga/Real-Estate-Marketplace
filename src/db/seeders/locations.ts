@@ -5,17 +5,6 @@ import { Payload } from 'payload'
 import { fileURLToPath } from 'url'
 
 export async function seedLocations(payload: Payload) {
-  // Clear the collection before seeding
-  console.log('Clearing zip codes collection...')
-
-  await payload.delete({
-    collection: 'locations',
-    where: {},
-  })
-
-  console.log('Locations collection cleared.')
-  console.log('Seeding locations...')
-
   const __filename = fileURLToPath(import.meta.url)
   const __dirname = dirname(__filename)
 

@@ -74,17 +74,6 @@ const allFeatures = [
 
 export const seedFeatures = async (payload: Payload) => {
   try {
-    console.log('Clearing features collection...')
-
-    await payload.delete({
-      collection: 'features',
-      where: {},
-    })
-
-    console.log('Features collection cleared.')
-
-    console.log('Seeding features...')
-
     const createPromises = allFeatures.map((feature) =>
       payload.create({
         collection: 'features',
