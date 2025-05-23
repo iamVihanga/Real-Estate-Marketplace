@@ -1,15 +1,14 @@
 import { drizzle } from 'drizzle-orm/node-postgres'
 import { reset } from 'drizzle-seed'
 
-import { getPayload } from 'payload'
 import { seedLocations } from './seeders/locations'
-import config from '@/payload.config'
 import { seedFeatures } from './seeders/features'
 import { seedUsers } from './seeders/users'
 import { seedProperties } from './seeders/properties'
+import { getPayloadClient } from './client'
 
 async function seed() {
-  const payload = await getPayload({ config })
+  const payload = await getPayloadClient()
   const db = drizzle(process.env.DATABASE_URI)
 
   console.log(`\n[Resetting database...]`)
