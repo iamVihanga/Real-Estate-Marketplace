@@ -9,7 +9,7 @@ import sharp from 'sharp'
 
 import { Users } from './config/collections/Users'
 import { Media } from './config/collections/Media'
-import { ZipCodes } from './config/collections/ZipCodes'
+import { Locations } from './config/collections/Locations'
 import { Properties } from './config/collections/Properties'
 import { Features } from './config/collections/Features'
 
@@ -23,7 +23,7 @@ export default buildConfig({
       baseDir: path.resolve(dirname),
     },
   },
-  collections: [Users, Media, ZipCodes, Properties, Features],
+  collections: [Users, Media, Locations, Properties, Features],
   editor: lexicalEditor(),
   secret: process.env.PAYLOAD_SECRET || '',
   typescript: {

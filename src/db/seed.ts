@@ -1,5 +1,5 @@
 import { getPayload } from 'payload'
-import { seedZipCodes } from './seeders/zipcodes'
+import { seedLocations } from './seeders/locations'
 import config from '@/payload.config'
 import { seedFeatures } from './seeders/features'
 
@@ -8,7 +8,7 @@ async function seed() {
 
   const payload = await getPayload({ config })
 
-  await seedZipCodes(payload)
+  await seedLocations(payload)
   await seedFeatures(payload)
 }
 

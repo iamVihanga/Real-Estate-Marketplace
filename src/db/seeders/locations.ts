@@ -4,17 +4,17 @@ import path, { dirname } from 'path'
 import { Payload } from 'payload'
 import { fileURLToPath } from 'url'
 
-export async function seedZipCodes(payload: Payload) {
+export async function seedLocations(payload: Payload) {
   // Clear the collection before seeding
   console.log('Clearing zip codes collection...')
 
   await payload.delete({
-    collection: 'zipcodes',
+    collection: 'locations',
     where: {},
   })
 
-  console.log('Zip codes collection cleared.')
-  console.log('Seeding zip codes...')
+  console.log('Locations collection cleared.')
+  console.log('Seeding locations...')
 
   const __filename = fileURLToPath(import.meta.url)
   const __dirname = dirname(__filename)
@@ -22,15 +22,15 @@ export async function seedZipCodes(payload: Payload) {
   const csvFilePath = path.resolve(__dirname, './zip_codes.csv')
 
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  const zipCodes: any[] = []
+  const locations: any[] = []
 
   await new Promise<void>((resolve, reject) => {
     fs.createReadStream(csvFilePath)
       .pipe(csv())
       // eslint-disable-next-line @typescript-eslint/no-explicit-any
       .on('data', (data: any) => {
-        zipCodes.push({
-          code: data.code,
+        locations.push({
+          zip: data.code,
           city: data.city,
           state_abbr: data.state_abbr,
           state_name: data.state_name,
@@ -41,7 +41,7 @@ export async function seedZipCodes(payload: Payload) {
         })
       })
       .on('end', () => {
-        console.log(`Found ${zipCodes.length} zip codes`)
+        console.log(`Found ${locations.length} zip codes`)
         resolve()
       })
       .on('error', (error: Error) => {
@@ -50,12 +50,12 @@ export async function seedZipCodes(payload: Payload) {
       })
   })
 
-  for (const zipCode of zipCodes) {
+  for (const location of locations) {
     await payload.create({
-      collection: 'zipcodes',
-      data: zipCode,
+      collection: 'locations',
+      data: location,
     })
   }
 
-  console.log('Zip codes seeded successfully.')
+  console.log('Location Zip Codes seeded successfully.')
 }

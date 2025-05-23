@@ -2,7 +2,6 @@
 
 import { getPayload } from 'payload'
 import config from '@payload-config'
-import { PropertyWithAddress } from '@/config/collections/Properties'
 
 export async function getPropertyById(id: string) {
   const payload = await getPayload({ config })
@@ -13,7 +12,7 @@ export async function getPropertyById(id: string) {
       id,
     })
 
-    return property as PropertyWithAddress
+    return property
   } catch (err) {
     const error = err as Error
 
