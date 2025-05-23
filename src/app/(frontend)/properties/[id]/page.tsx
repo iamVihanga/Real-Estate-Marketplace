@@ -24,7 +24,7 @@ export default async function PropertyDetailsPage({ params }: Props) {
           </CardHeader>
           <CardContent className="flex flex-col gap-2">
             <div className="flex flex-row gap-1">
-              <p>{property.address.street},</p>
+              <p>{property.address.street}</p>
               <p>{property.address.city}</p>
               <p>{property.address.state_abbr},</p>
               <p>{property.address.zip}</p>
