@@ -1,10 +1,9 @@
 'use server'
 
-import { getPayload } from 'payload'
-import config from '@payload-config'
+import { getPayloadClient } from '@/db/client'
 
 export async function getPropertyById(id: string) {
-  const payload = await getPayload({ config })
+  const payload = await getPayloadClient()
 
   try {
     const property = await payload.findByID({
