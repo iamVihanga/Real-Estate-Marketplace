@@ -68,7 +68,7 @@ export const Properties: CollectionConfig = {
       admin: {
         hidden: true,
       },
-      required: true,
+      required: false,
       typescriptSchema: [
         () => {
           const address: JSONSchema4 = {
