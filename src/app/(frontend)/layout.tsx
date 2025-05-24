@@ -1,6 +1,6 @@
 import React from 'react'
 
-import './styles.css'
+import '@/styles/frontend.css'
 import { fontHeading, fontSans } from '@/lib/fonts'
 
 export const metadata = {

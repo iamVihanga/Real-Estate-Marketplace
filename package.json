@@ -13,7 +13,8 @@
     "lint": "cross-env NODE_OPTIONS=--no-deprecation next lint",
     "payload": "cross-env NODE_OPTIONS=--no-deprecation payload",
     "start": "cross-env NODE_OPTIONS=--no-deprecation next start",
-    "db:seed": "cross-env NODE_OPTIONS=--no-deprecation payload run src/db/seed.ts"
+    "db:seed": "cross-env NODE_OPTIONS=--no-deprecation payload run src/db/seed.ts",
+    "db:migrate": "cross-env NODE_OPTIONS=--no-deprecation payload migrate"
   },
   "dependencies": {
     "@faker-js/faker": "^9.8.0",
@@ -21,6 +22,8 @@
     "@payloadcms/next": "3.33.0",
     "@payloadcms/payload-cloud": "3.33.0",
     "@payloadcms/richtext-lexical": "3.33.0",
+    "@radix-ui/react-avatar": "^1.1.10",
+    "@radix-ui/react-dialog": "^1.1.14",
     "@radix-ui/react-slot": "^1.2.2",
     "@tailwindcss/postcss": "^4.1.7",
     "class-variance-authority": "^0.7.1",
@@ -35,6 +38,7 @@
     "react": "19.1.0",
     "react-dom": "19.1.0",
     "sharp": "0.32.6",
+    "slugify": "^1.6.6",
     "tailwind-merge": "^3.3.0",
     "tailwindcss": "^4.1.7",
     "zod": "^3.25.23"
