@@ -198,25 +198,46 @@ export interface Location {
  * via the `definition` "properties".
  */
 export interface Property {
-  id: number;
+  id: string;
   title: string;
-  street: string;
-  /**
-   * Select a ZIP code for this property
-   */
-  location: number | Location;
-  price: number;
-  listingStatus: 'for_sale' | 'pending' | 'under_construction' | 'sold' | 'not_for_sale';
-  address: {
-    street: string;
-    city: string;
-    state_abbr: string;
-    county: string;
-    zip: string;
+  description: {
+    root: {
+      type: string;
+      children: {
+        type: string;
+        version: number;
+        [k: string]: unknown;
+      }[];
+      direction: ('ltr' | 'rtl') | null;
+      format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
+      indent: number;
+      version: number;
+    };
     [k: string]: unknown;
   };
+  price?: number | null;
+  listingStatus: 'forsale' | 'pending' | 'contract' | 'contingent' | 'sold' | 'offmarket' | 'notforsale';
+  details?: {
+    bedrooms?: number | null;
+    bathrooms?: number | null;
+    squareFeet?: number | null;
+    lotSize?: number | null;
+    yearBuilt?: number | null;
+  };
+  photos?: (number | Media)[] | null;
+  street: string;
+  address?: {
+    street: string;
+    city: string;
+    state: string;
+    state_abbr: string;
+    zip: string;
+    full_address: string;
+    [k: string]: unknown;
+  };
+  location: number | Location;
   /**
-   * Select features for this property
+   * Select the features for this property.
    */
   features?: (number | Feature)[] | null;
   updatedAt: string;
@@ -257,7 +278,7 @@ export interface PayloadLockedDocument {
       } | null)
     | ({
         relationTo: 'properties';
-        value: number | Property;
+        value: string | Property;
       } | null)
     | ({
         relationTo: 'features';
@@ -359,12 +380,24 @@ export interface LocationsSelect<T extends boolean = true> {
  * via the `definition` "properties_select".
  */
 export interface PropertiesSelect<T extends boolean = true> {
+  id?: T;
   title?: T;
-  street?: T;
-  location?: T;
+  description?: T;
   price?: T;
   listingStatus?: T;
+  details?:
+    | T
+    | {
+        bedrooms?: T;
+        bathrooms?: T;
+        squareFeet?: T;
+        lotSize?: T;
+        yearBuilt?: T;
+      };
+  photos?: T;
+  street?: T;
   address?: T;
+  location?: T;
   features?: T;
   updatedAt?: T;
   createdAt?: T;

@@ -92,17 +92,17 @@ export async function seedProperties(payload: Payload): Promise<void> {
           city: location.city || '',
           state: location.state_name || '',
           state_abbr: location.state_abbr || '',
-          county: location.county || faker.location.county(), // Add this line
           zip: location.zip || '',
           full_address: `${street}, ${location.city || ''}, ${location.state_abbr || ''} ${location.zip || ''}`,
         },
         price: faker.number.int({ min: 100000, max: 1000000 }),
         listingStatus: faker.helpers.weightedArrayElement([
-          { weight: 5, value: 'for_sale' },
+          //'forsale' | 'pending' | 'contract' | 'sold' | 'notforsale'
+          { weight: 5, value: 'forsale' },
           { weight: 2, value: 'pending' },
-          { weight: 2, value: 'under_construction' },
+          { weight: 2, value: 'contract' },
           { weight: 3, value: 'sold' },
-          { weight: 1, value: 'not_for_sale' },
+          { weight: 1, value: 'notforsale' },
         ]),
         features: faker.helpers.arrayElements(
           features.docs.map((feature) => feature.id),
