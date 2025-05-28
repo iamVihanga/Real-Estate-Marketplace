@@ -1,6 +1,12 @@
 import slugify from 'slugify'
 
-import { Feature, Property as PropertyType, Location as LocationType, Media } from '@/payload-types'
+import {
+  Feature,
+  Property as PropertyType,
+  Location as LocationType,
+  Media,
+  Agent,
+} from '@/payload-types'
 import { formatPrice } from '@/lib/format-price'
 import route from '@/lib/routes'
 
@@ -63,5 +69,9 @@ export class Property {
       id: this.data.id,
       full_address: fullAddress.join('/'),
     })
+  }
+
+  get agent(): Agent {
+    return this.data.agent as Agent
   }
 }
