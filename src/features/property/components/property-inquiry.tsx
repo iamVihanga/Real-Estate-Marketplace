@@ -1,14 +1,12 @@
 'use client'
 
-import { Button } from '@/components/ui/button'
-import { Input } from '@/components/ui/input'
-import { Textarea } from '@/components/ui/textarea'
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar'
 import { MailIcon, PhoneCallIcon } from 'lucide-react'
 import { useProperty } from '../context/hooks'
 import { Media } from '@/payload-types'
+import { PropertyInquiryForm } from '@/forms/property-inquiry-form/form'
 
-export const AgentContact = () => {
+export const PropertyInquiry = () => {
   const property = useProperty()
 
   const agent = property.agent
@@ -39,15 +37,9 @@ export const AgentContact = () => {
           </div>
         </div>
       </div>
-      <div className="flex flex-col items-center gap-2">
-        <Input placeholder="Enter your name" />
-        <Input placeholder="Enter your email" />
-        <Textarea placeholder="Enter your message" />
 
-        <Button className="w-full" size={'lg'}>
-          Send
-        </Button>
-      </div>
+      {/* Inquiry Form */}
+      <PropertyInquiryForm />
     </div>
   )
 }

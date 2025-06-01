@@ -8,7 +8,7 @@ import { PropertyDetails } from '@/features/property/components/details'
 import { PropertyOverview } from '@/features/property/components/overview'
 import { PropertyFeatures } from '@/features/property/components/features'
 import { PropertyMap } from '@/features/property/components/map'
-import { AgentContact } from '@/features/property/components/agent-contact'
+import { PropertyInquiry } from '@/features/property/components/property-inquiry'
 
 interface PropertyDetailsPageProps {
   params: Promise<{
@@ -38,7 +38,7 @@ export default async function PropertyDetailsPage({ params }: PropertyDetailsPag
 
           <div className="col-span-12 desktop:col-span-4">
             <div className="sticky top-4">
-              <AgentContact />
+              <PropertyInquiry />
             </div>
           </div>
         </div>
