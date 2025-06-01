@@ -72,6 +72,9 @@ export interface Config {
     locations: Location;
     properties: Property;
     features: Feature;
+    agents: Agent;
+    contacts: Contact;
+    inquiries: Inquiry;
     'payload-locked-documents': PayloadLockedDocument;
     'payload-preferences': PayloadPreference;
     'payload-migrations': PayloadMigration;
@@ -83,6 +86,9 @@ export interface Config {
     locations: LocationsSelect<false> | LocationsSelect<true>;
     properties: PropertiesSelect<false> | PropertiesSelect<true>;
     features: FeaturesSelect<false> | FeaturesSelect<true>;
+    agents: AgentsSelect<false> | AgentsSelect<true>;
+    contacts: ContactsSelect<false> | ContactsSelect<true>;
+    inquiries: InquiriesSelect<false> | InquiriesSelect<true>;
     'payload-locked-documents': PayloadLockedDocumentsSelect<false> | PayloadLockedDocumentsSelect<true>;
     'payload-preferences': PayloadPreferencesSelect<false> | PayloadPreferencesSelect<true>;
     'payload-migrations': PayloadMigrationsSelect<false> | PayloadMigrationsSelect<true>;
@@ -217,6 +223,7 @@ export interface Property {
   };
   price?: number | null;
   listingStatus: 'forsale' | 'pending' | 'contract' | 'contingent' | 'sold' | 'offmarket' | 'notforsale';
+  agent?: (number | null) | Agent;
   details?: {
     bedrooms?: number | null;
     bathrooms?: number | null;
@@ -245,6 +252,26 @@ export interface Property {
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "agents".
+ */
+export interface Agent {
+  id: number;
+  firstName: string;
+  lastName: string;
+  fullName?: string | null;
+  initials?: string | null;
+  /**
+   * e.g., "Realtor", "Senior Agent", "Broker"
+   */
+  title?: string | null;
+  profilePhoto?: (number | null) | Media;
+  phone?: string | null;
+  contactEmail?: string | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
  * via the `definition` "features".
  */
 export interface Feature {
@@ -254,6 +281,31 @@ export interface Feature {
    */
   name: string;
   category: 'interior' | 'exterior' | 'community' | 'appliances' | 'utilities' | 'other';
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "contacts".
+ */
+export interface Contact {
+  id: number;
+  name: string;
+  phone: string;
+  email: string;
+  assignedTo?: (number | null) | Agent;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "inquiries".
+ */
+export interface Inquiry {
+  id: number;
+  contact: number | Contact;
+  property?: (string | null) | Property;
+  message: string;
   updatedAt: string;
   createdAt: string;
 }
@@ -283,6 +335,18 @@ export interface PayloadLockedDocument {
     | ({
         relationTo: 'features';
         value: number | Feature;
+      } | null)
+    | ({
+        relationTo: 'agents';
+        value: number | Agent;
+      } | null)
+    | ({
+        relationTo: 'contacts';
+        value: number | Contact;
+      } | null)
+    | ({
+        relationTo: 'inquiries';
+        value: number | Inquiry;
       } | null);
   globalSlug?: string | null;
   user: {
@@ -385,6 +449,7 @@ export interface PropertiesSelect<T extends boolean = true> {
   description?: T;
   price?: T;
   listingStatus?: T;
+  agent?: T;
   details?:
     | T
     | {
@@ -409,6 +474,45 @@ export interface PropertiesSelect<T extends boolean = true> {
 export interface FeaturesSelect<T extends boolean = true> {
   name?: T;
   category?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "agents_select".
+ */
+export interface AgentsSelect<T extends boolean = true> {
+  firstName?: T;
+  lastName?: T;
+  fullName?: T;
+  initials?: T;
+  title?: T;
+  profilePhoto?: T;
+  phone?: T;
+  contactEmail?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "contacts_select".
+ */
+export interface ContactsSelect<T extends boolean = true> {
+  name?: T;
+  phone?: T;
+  email?: T;
+  assignedTo?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "inquiries_select".
+ */
+export interface InquiriesSelect<T extends boolean = true> {
+  contact?: T;
+  property?: T;
+  message?: T;
   updatedAt?: T;
   createdAt?: T;
 }

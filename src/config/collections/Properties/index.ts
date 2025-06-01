@@ -86,6 +86,12 @@ export const Properties: CollectionConfig = {
               options: listingStatusOptions,
             },
             {
+              name: 'agent',
+              type: 'relationship',
+              relationTo: 'agents',
+              hasMany: false,
+            },
+            {
               name: 'details',
               type: 'group',
               fields: [
